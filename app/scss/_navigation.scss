@@ -1,0 +1,12 @@
+
+.index-nav{
+  .menu-bar{
+    li{
+      a{
+        &.active{
+          color:#ff9900;
+        }
+      }
+    }
+  }
+}

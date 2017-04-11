@@ -1,0 +1,10 @@
+//@import './node_modules/foundation-sites/assets/foundation.scss';
+// 因为 webpack中 sass-loader是通过node-sass来处理scss文件， node-sass会自动从node_modules路径中寻找我们引用的scss文件， 所以上面的import路径可以改为下面这样
+
+//The sass-loader uses node-sass' custom importer feature to pass all queries to the webpack resolving engine. Thus you can import your Sass modules from node_modules. Just prepend them with a ~ to tell webpack that this is not a relative import
+
+@import '~foundation-apps/scss/foundation.scss';
+
+//private
+@import 'global';
+@import "navigation";
